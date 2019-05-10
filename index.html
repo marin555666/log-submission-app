@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta charset="UTF-8" />
+    <title>LOG CREATION</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
+    <table align="center" style="background:#DF4E00; border-radius: 2px">
+      <th>
+        <h2 style="color: white">
+          To create a log, enter a Task ID and then submit.
+        </h2>
+      </th>
+      <tbody align="center">
+        <tr>
+          <td>
+            <form action="#" id="newLogForm">
+              <input type="text" name="taskId" id="taskId" />
+              <br />
+              <input type="submit" value="Submit" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td><p id="para" style="color: white"></p></td>
+        </tr>
+      </tbody>
+    </table>
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+      require("./renderer.js");
     </script>
   </body>
 </html>
